@@ -2,7 +2,7 @@
   <el-card shadow="always" class="InventoryTopClass">
     <div style="overflow-y: auto;height: 87vh;" class="tagBoxDivClass">
       <div class="tagBoxClass">
-        <el-popover placement="top-start" title="可生产物品"  trigger="hover"
+        <el-popover placement="right" title="可生产物品"  trigger="hover"
                     v-for="(object,index) in Object.getOwnPropertyNames(rawMaterial)" :key="index">
          <SuperObjectItem :objects="supperObjects(object)"/>
         <el-tag @click=" setMaterials(object,amount)" class="tagClass" size="mini" slot="reference"
@@ -12,7 +12,7 @@
         </el-popover>
       </div>
       <div class="tagBoxClass">
-        <el-popover placement="top-start" title="可生产物品"  trigger="hover"
+        <el-popover placement="right" title="可生产物品"  trigger="hover"
                     v-for="(object,index) in Object.getOwnPropertyNames(smelt)" :key="index">
           <SuperObjectItem :objects="supperObjects(object)"/>
         <el-tag @click=" setMaterials(object,amount)" class="tagClass" size="mini" slot="reference"
@@ -22,7 +22,7 @@
         </el-popover>
       </div>
       <div class="tagBoxClass">
-        <el-popover placement="top-start" title="可生产物品"  trigger="hover"
+        <el-popover placement="right" title="可生产物品"  trigger="hover"
                     v-for="(object,index) in Object.getOwnPropertyNames(chemicalIndustry)" :key="index">
           <SuperObjectItem :objects="supperObjects(object)"/>
         <el-tag @click=" setMaterials(object,amount)" class="tagClass" size="mini" slot="reference"
@@ -32,7 +32,7 @@
         </el-popover>
       </div>
       <div class="tagBoxClass">
-        <el-popover placement="top-start" title="可生产物品"  trigger="hover"
+        <el-popover placement="right" title="可生产物品"  trigger="hover"
                     v-for="(object,index) in Object.getOwnPropertyNames(primaryFinishedProduct)" :key="index">
           <SuperObjectItem :objects="supperObjects(object)"/>
         <el-tag @click=" setMaterials(object,amount)" class="tagClass" size="mini" slot="reference"
@@ -42,7 +42,7 @@
         </el-popover>
       </div>
       <div class="tagBoxClass">
-        <el-popover placement="top-start" title="可生产物品"  trigger="hover"
+        <el-popover placement="right" title="可生产物品"  trigger="hover"
                     v-for="(object,index) in Object.getOwnPropertyNames(advancedFinishedProduct)" :key="index">
           <SuperObjectItem :objects="supperObjects(object)"/>
           <el-tag @click=" setMaterials(object,amount)" class="tagClass" size="mini" slot="reference"
