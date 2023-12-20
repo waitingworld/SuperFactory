@@ -120,6 +120,25 @@ export default {
     getImageBase64('地下传送带')
     getImageBase64('筛选分流器')
 
+    getImageBase64('碳灰')
+    getImageBase64('碳纤维')
+    getImageBase64('铝块')
+    getImageBase64('初级加速芯片')
+    getImageBase64('中级加速芯片')
+    getImageBase64('高级加速芯片')
+    getImageBase64('轻机枪子弹')
+    getImageBase64('重型机子弹')
+    getImageBase64('穿甲导弹')
+    getImageBase64('五彩科研瓶')
+    getImageBase64('稀土超导体')
+    getImageBase64('稀土永磁片')
+    getImageBase64('铝合金')
+    getImageBase64('氧气瓶')
+    getImageBase64('降落伞')
+    getImageBase64('太空舱')
+    getImageBase64('航天飞船')
+    getImageBase64('空间站')
+
   }
 }
 </script>

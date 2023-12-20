@@ -16,7 +16,7 @@
             <el-form-item label="目标物品个数" >
               <el-slider v-model="amount" :step="1" :max="100" :min="1" v-show="allData.length>0" />
             </el-form-item>
-            <el-form-item label="目标物品效率" >
+            <el-form-item label="目标物品效率" v-if="false">
               <el-slider v-model="percent" :step="1" :max="100" :min="1" v-show="allData.length>0"/>
             </el-form-item>
           </el-form>

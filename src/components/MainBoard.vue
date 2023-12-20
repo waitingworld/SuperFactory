@@ -2,8 +2,8 @@
   <div class="topClass">
     <el-row :gutter="30" style="width: 100%;" v-if="!showMap">
       <el-col :span="5">
-        <el-switch :active-text="'模拟'" :inactive-text="'计算'" class="fixBtnClass" v-model="showMap"/>
-        <el-button size="mini" type="primary" @click="saveFiles(treeMaterials,currentResource+'.txt')">导出</el-button>
+        <el-switch :active-text="'模拟'" :inactive-text="'计算'" class="fixBtnClass" v-model="showMap" v-if="false"/>
+        <el-button size="mini" type="primary" @click="saveFiles(treeMaterials,currentResource+'.txt')" style="margin-bottom: 1vh;">导出</el-button>
         <inventory @setMaterials="getMaterials" :amount="amount" :percent="percent"
                    @setCurrentResource="(name)=>{currentResource=name}"/>
       </el-col>
@@ -12,7 +12,7 @@
                     @setPercent="(total)=>{percent=total}"/>
       </el-col>
     </el-row>
-    <div v-if="showMap" style="position: fixed;top: 0;left: 0;">
+    <div v-if="showMap && false" style="position: fixed;top: 0;left: 0;" >
       <el-switch :active-text="'模拟'" :inactive-text="'计算'" class="fixBtnClass" v-model="showMap"/>
       <map-simulation/>
     </div>
